@@ -1,0 +1,8 @@
+# The Wisdom of Crowds and resilience to mis- and disinformation study
+## Data analysis repository
+
+This repository contains the code for analysing the results of the pre-registered [Wisdom of Crowds and Resilience to mis- and disinformation study](https://osf.io/mjsh5/) by the Australian [Digital Trust Research Group](https://www.digitaltrustresearch.com/). The study looks at the effects on a testimonial network when the central nodes of the network are unreliable, with a special focus on the use of the [Wisdom of Crowds package](https://github.com/cvklein/wisdom-of-crowds) to study features of network structure that may help or hinder with dealing with mis- and disinformation. More detail of the aims and methods of the study is to be found in the [study's preregistration](https://osf.io/mjsh5/).
+
+The study is performed by running simulations using the [Polygraphs package](https://github.com/alexandroskoliousis/polygraphs/), and this data analysis repository is built on that package's analysis module. See [their documentation](https://github.com/alexandroskoliousis/polygraphs/blob/main/docs/guide/simulations/processing-results.md) for a guide on how navigate Polygraphs simulation data.
+
+The raw simulation data for the study is found in the _/polygraphs-cache_ directory, in a collection of Polygraphs Processors which in turn contain Pandas Dataframes including the relevant data. The data analysis code is in the _unreliable-nets-analysis.ipynb_ Jupyter Notebook. The other files in the main directory (i.e. _centrality.json_) contains data that has already been analysed that is referred to by this code.
