@@ -1,0 +1,89 @@
+{
+    "device": "cpu",
+    "op": "UnreliableNetworkBasicGullibleNegativeEpsOp",
+    "seed": 917012,
+    "epsilon": 0.001,
+    "trials": 10,
+    "lowerupper": 0.99,
+    "upperlower": 0.5,
+    "mistrust": 0.0,
+    "antiupdating": false,
+    "reliability": 1.0,
+    "trust": 0.0,
+    "unreliablenodes": [
+        162,
+        4,
+        101,
+        135,
+        139,
+        82,
+        52,
+        21,
+        118,
+        184
+    ],
+    "init": {
+        "kind": "uniform",
+        "uniform": {
+            "lower": 0.0,
+            "upper": 1.0
+        },
+        "gaussian": {
+            "mean": 0.0,
+            "std": 1.0,
+            "lower": -2.0,
+            "upper": 2.0,
+            "attempts": 4
+        },
+        "constant": {
+            "value": null
+        },
+        "beliefs": {}
+    },
+    "logging": {
+        "enabled": true,
+        "interval": 1000
+    },
+    "snapshots": {
+        "enabled": true,
+        "interval": 100,
+        "messages": false
+    },
+    "network": {
+        "kind": "gml",
+        "size": null,
+        "directed": false,
+        "selfloop": true,
+        "random": {
+            "seed": null,
+            "tries": 100,
+            "probability": 1.0
+        },
+        "wattsstrogatz": {
+            "knn": 2,
+            "seed": null,
+            "tries": 100,
+            "probability": 1.0
+        },
+        "barabasialbert": {
+            "attachments": 1,
+            "seed": null
+        },
+        "snap": {
+            "name": null
+        },
+        "ogb": {
+            "name": "collab"
+        },
+        "gml": {
+            "name": "EmailEUCore",
+            "path": "EU-core.gml",
+            "directed": true
+        }
+    },
+    "simulation": {
+        "results": "/home/mferreira/polygraphs-cache/results/2025-06-18/783bdd1d2bd446bcbe10b911225c0d3b",
+        "repeats": 10,
+        "steps": 25000
+    }
+}
